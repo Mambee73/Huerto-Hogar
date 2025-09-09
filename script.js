@@ -57,12 +57,12 @@ document.getElementById('registerForm')?.addEventListener('submit', function(eve
 });
 
 
+
 let shoppingCart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
 
 function saveCartToLocalStorage() {
     localStorage.setItem('shoppingCart', JSON.stringify(shoppingCart));
 }
-
 
 function addToCart(productName, price) {
     let productFound = false;
@@ -83,7 +83,7 @@ function addToCart(productName, price) {
 function removeFromCart(productName) {
     shoppingCart = shoppingCart.filter(item => item.name !== productName);
     saveCartToLocalStorage();
-    renderCart(); 
+    renderCart();
 }
 
 function changeQuantity(productName, change) {
@@ -148,7 +148,6 @@ function renderCart() {
     document.getElementById('cart-total').textContent = `Total: $${total} CLP`;
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.product-card .add-to-cart');
     buttons.forEach(button => {
@@ -161,6 +160,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
     renderCart();
 });
