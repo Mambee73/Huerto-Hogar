@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - HuertoHogar</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a class="logo-huertohogar" href="#">HuertoHogar</a>
+            <nav class="nav-menu">
+                <a href="Index.html">Inicio</a>
+                <a href="Productos.html">Productos</a>
+                <a href="#">Nosotros</a>
+                <a href="Contacto.html">Contacto</a>
+                <a href="Carrito.html">🛒</a>
+                <a href="Registro.html">Registro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="register-section" class="contact-section">
+            <h1 class="contact-title">Regístrate en HuertoHogar</h1>
+            <p class="contact-text">Crea una cuenta para disfrutar de todos nuestros productos frescos.</p>
+            
+            <form id="registerForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nombre completo:</label>
+                    <input type="text" id="name" name="name" required class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo:</label>
+                    <input type="email" id="email" name="email" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" id="password" name="password" required class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword" class="form-label">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required class="form-input">
+                </div>
+                
+                <button type="submit" class="btn btn-full-width">Crear Cuenta</button>
+            </form>
+            <p id="registerMessage"></p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; Mambee97 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

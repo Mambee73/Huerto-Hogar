@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertoHogar</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a class="logo-huertohogar" href="#">HuertoHogar</a>
+            <nav class="nav-menu">
+                <a href="Index.html">Inicio</a>
+                <a href="Productos.html">Productos</a>
+                <a href="#">Nosotros</a>
+                <a href="Contacto.html">Contacto</a>
+                <a href="Carrito.html">🛒</a>
+                <a href="Registro.html">Registro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="welcome" class="welcome-section">
+            <h1 class="welcome-title">Bienvenido a HuertoHogar</h1>
+            <p class="welcome-text">Del campo a tu hogar, con la frescura que mereces.</p>
+        </section>
+
+        <section class="info-section">
+            <div class="info-item">
+                <h2>Nuestra Misión</h2>
+                <p>Nuestra misión es proporcionar productos frescos y de calidad directamente desde el campo hasta la puerta de nuestros clientes, garantizando la frescura y el sabor en cada entrega. Nos comprometemos a fomentar una conexión más cercana entre los consumidores y los agricultores locales, apoyando prácticas agrícolas sostenibles y promoviendo una alimentación saludable en todos los hogares chilenos.</p>
+            </div>
+            <div class="info-item">
+                <h2>Nuestra Visión</h2>
+                <p>Nuestra visión es ser la tienda online líder en la distribución de productos frescos y naturales en Chile, reconocida por nuestra calidad excepcional, servicio al cliente y compromiso con la sostenibilidad. Aspiramos a expandir nuestra presencia a nivel nacional e internacional, estableciendo un nuevo estándar en la distribución de productos agrícolas directos del productor al consumidor.</p>
+            </div>
+        </section>
+
+        <section id="productos" class="products-section">
+            <h2 class="section-title">Productos Destacados Para este 18! ❤️🤍💙</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/Choclo_Producto.webp" class="product-image" alt="Choclos frescos">
+                    <div class="product-info">
+                        <h3 class="product-title">Choclos tiernos</h3>
+                        <p class="product-price">Precio: $800 CLP / kg</p>
+                        <a href="#" class="btn">Añadir al Carrito</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Espinaca_producto.jpg" class="product-image" alt="Espinacas frescas">
+                    <div class="product-info">
+                        <h3 class="product-title">Espinacas Frescas</h3>
+                        <p class="product-price">Precio: $700 CLP / bolsa</p>
+                        <a href="#" class="btn">Añadir al Carrito</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Pimentones_Producto.jpg" class="product-image" alt="Pimientos tricolores">
+                    <div class="product-info">
+                        <h3 class="product-title">Pimientos Tricolores</h3>
+                        <p class="product-price">Precio: $1.500 CLP / kg</p>
+                        <a href="#" class="btn">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="login" class="login-section">
+          <h2 class="login-title">Iniciar Sesión</h2>
+          <form id="loginForm" class="login-form">
+            <div class="form-group">
+              <label for="email" class="form-label">Correo:</label>
+              <input type="email" id="email" name="email" maxlength="100" required class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="password" class="form-label">Contraseña:</label>
+              <input type="password" id="password" name="password" minlength="4" maxlength="10" required class="form-input">
+            </div>
+            <button type="submit" class="btn btn-full-width">Ingresar</button>
+          </form>
+          <p id="loginMessage" class="login-message"></p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; Mambee97 - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

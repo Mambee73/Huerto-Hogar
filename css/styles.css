@@ -1,0 +1,344 @@
+:root {
+  --color-verde-principal: #4b6a4b;
+  --color-verde-claro: #8ac08a;
+  --color-amarillo-destacado: #fbc02d;
+  --color-gris-texto: #555555;
+  --color-fondo: #ffffff;
+  --color-fondo-oscuro: #f0f4f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--color-gris-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-verde-principal);
+  margin-bottom: 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-fondo-oscuro);
+  border-bottom: 2px solid var(--color-verde-claro);
+}
+
+.logo-huertohogar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--color-verde-principal);
+  text-decoration: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--color-gris-texto);
+  margin-left: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--color-verde-principal);
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: var(--color-fondo-oscuro);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.info-item {
+    flex: 1;
+    background-color: var(--color-fondo-oscuro);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.products-section {
+    padding: 2rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.product-info h3 {
+  font-size: 1.25rem;
+  color: var(--color-verde-principal);
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-amarillo-destacado);
+  margin-top: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-verde-principal);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-verde-claro);
+}
+
+.login-section {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--color-fondo-oscuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-verde-principal);
+}
+
+.login-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.login-form .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.login-form .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-full-width {
+    width: 100%;
+    text-align: center;
+}
+
+.login-message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color-verde-principal);
+    color: #fff;
+}
+
+
+.contact-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--color-fondo-oscuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-verde-principal);
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--color-gris-texto);
+}
+
+.contact-form .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+   }
+  
+   .nav-menu {
+      margin-top: 1rem;
+  }
+
+  .nav-menu a {
+    margin: 0.5rem 0.5rem;
+  }
+
+  .info-section {
+      flex-direction: column;
+  }
+
+  .main-content {
+      padding: 1rem;
+  }
+}
+
+
+/* --- Estilos para la sección del Carrito --- */
+.cart-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--color-fondo-oscuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-verde-principal);
+}
+
+.cart-container {
+    border-top: 2px solid var(--color-verde-principal);
+    margin-bottom: 1rem;
+}
+
+.cart-item-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.cart-item-quantity input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cart-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-verde-principal);
+}
